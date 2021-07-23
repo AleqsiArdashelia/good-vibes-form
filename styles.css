@@ -1,0 +1,36 @@
+html {
+    background: #FF8384;
+
+}
+
+body {
+    background: #4ECCBE;
+    margin: auto;
+    text-align: center;
+}
+
+/* lists */
+
+ul {
+    list-style: none;
+}
+
+/* header */
+
+header {
+    background: #2473AB;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+/* main */
+
+
+
+@media (min-width: 1000px) {
+    body {
+        max-width: 80vw;
+    }
+}
