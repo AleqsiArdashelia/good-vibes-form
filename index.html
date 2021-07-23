@@ -26,29 +26,29 @@
         <form action="">
             <!-- name -->
             <div class="form-row" >
-                <div class="label">
+                <div class="labels">
                     <label for="name">Name:</label>
                 </div>
                 <div class="fields">
-                    <input type="name" placeholder="enter your name">
+                    <input type="name" placeholder="enter your name" class="input-fields">
                 </div>
             </div>
             <!-- email -->
             <div class="form-row">
-                <div class="label">
+                <div class="labels">
                     <label for="email">Email:</label>
                 </div>
                 <div class="fields">
-                    <input type="email" placeholder="enter your email">
+                    <input type="email" placeholder="enter your email" class="input-fields">
                 </div>
             </div>
             <!-- 1-10 -->
             <div class="form-row">
-                <div class="label">
+                <div class="labels">
                     <label for="1-10">On a scale of 1-10, how good was it?</label>
                 </div>
                 <div class="fields">
-                    <select name="1-10" id="1-10" >
+                    <select name="1-10" id="1-10" class="dropdown">
                         <option disabled selected>select a number between 1 and 10</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -65,12 +65,12 @@
             </div>
             <!-- where -->
             <div class="form-row">
-                <div class="label">
+                <div class="labels">
                     <label for="where">Where did it happen?</label>
                 </div>
                 <div class="fields">
-                    <select name="where" id="where">
-                        <option value="" disabled selected>select where it happened</option>
+                    <select name="where" id="where" class="dropdown">
+                        <option disabled selected>select where it happened</option>
                         <option value="morning">At home</option>
                         <option value="noon">On my commute</option>
                         <option value="afternoon">on the street</option>
@@ -81,36 +81,48 @@
             </div>
             <!-- when -->
             <div class="form-row">
-                <div class="label">
+                <div class="labels">
                 <label for="time-of-day"> At what time of day did it happen?</label>
                 </div>
-                <ul id="time-of-day">
-                    <li class="radio">
-                        <label for="morning">Morning</label><input type="radio" name="where" id="morning" value="morning">
-                    </li>
-                    <li class="radio">
-                        <label for="afternoon">Afternoon</label><input type="radio" name="where" id="afternoon" value="afternoon">
-                    </li>
-                    <li class="radio">
-                        <label for="evening">Evening</label><input type="radio" name="where" id="vening">
-                    </li>
-                </ul>
-            </div>
-            <div class="form-row">
-                <div class="label">
-
-                </div>
                 <div class="fields">
-
+                    <ul id="time-of-day">
+                        <li class="radio">
+                            <label for="morning">Morning</label><input type="radio" name="time-radio" id="morning" value="morning" class="user-selection">
+                        </li>
+                        <li class="radio">
+                            <label for="afternoon">Afternoon</label><input type="radio" name="time-radio" id="afternoon" value="afternoon" class="user-selection">
+                        </li>
+                        <li class="radio">
+                            <label for="evening">Evening</label><input type="radio" name="time-radio" id="evening" value="evening" class="user-selection">
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!--  -->
+            <!-- feelings -->
             <div class="form-row">
-                <div class="label">
-
+                <div class="labels">
+                    <label for="feelings">What emotions did you experience?<br>(Select all that apply)</label>
                 </div>
                 <div class="fields">
-
+                    <ul id="feelings">
+                        <li class="checkbox">
+                            <label for="excited">Excited</label><input type="checkbox" name="feelings-check" id="excited" value="excited" class="user-selection">
+                            <label for="humbled">Humbled</label><input type="checkbox" name="feelings-check" id="humbled" value="humbled" class="user-selection">
+                            <label for="elated">Elated</label><input type="checkbox" name="feelings-check" id="elated" value="elated" class="user-selection">
+                            <label for="loved">Loved</label><input type="checkbox" name="feelings-check" id="loved" value="loved" class="user-selection">
+                            <label for="enthusiatic">Enthusiaic</label><input type="checkbox" name="feelings-check" id="enthusiatic" value="enthusiatic" class="user-selection">
+                            <label for="motivated">Motivated</label><input type="checkbox" name="feelings-check" id="motivated" value="motivated" class="user-selection">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- text -->
+            <div class="form-row">
+                <div class="labels">
+                    <label for="event-details">Please describe your positive experience.</label>
+                </div>
+                <div class="fields">
+                    <textarea name="event-details" id="event-details" cols="30" rows="10" placeholder="Enter your experience here..."></textarea>
                 </div>
             </div>
             
