@@ -1,10 +1,12 @@
 html {
-    background: #FF8384;
 
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 75%);
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    background: #4ECCBE;
+    background: initial;
     margin: auto;
     text-align: center;
 }
@@ -19,12 +21,19 @@ ul {
 /* header */
 
 header {
-    background: #2473AB;
+    background: initial;
+    text-align: center;
+    height: 5vw;
+    margin-top: 5%;
+
 }
 
 header h1 {
-    margin: 0px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
 }
+
+
 
 /* main */
 
@@ -53,7 +62,7 @@ header h1 {
 
 .input-fields {
     height: 20px;
-    width: 33vw;
+    width: fit-content;
     padding: 5px;
     margin: 10px;
     border: 1px solid #c0c0c0;
@@ -62,17 +71,113 @@ header h1 {
 
 .dropdown {
     height: 35px;
-    width: 28vw;
+    width: fit-content;
     padding: 5px;
-    margin: 15px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     border: 1px solid #c0c0c0;
     border-radius: 4px;
 }
 
+.user-selection {
+    float: left;
+    margin: 2px 0 0 0;
+}
+
+form li {
+    margin-bottom: 5px;
+}
+
+li label {
+    margin-left: 5px;
+}
+
+textarea {
+    margin: 15px 0 5px 13px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 3px;
+}
+
+.submit {
+    margin: 5px 0 20px 0;
+    padding: 5px;
+    border-radius: 3px;
+    border-width: 1px;
+} 
+
+/* footer */
+footer {
+    height: 5vw;
+    background: initial;
+    text-align: center;
+    vertical-align: center;
+}
+
+nav {
+    display: inline;
+    margin: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+nav a{
+    color: rgb(181, 7, 197);
+    opacity: 0.8;
+    text-decoration: none;
+}
 
 /* media */
+
+
+@media (min-width: 320px) and (max-width: 430px){
+    .input-fields {
+        width: 198px;
+
+    } 
+    .dropdown{
+        width: 202px;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    main h1 {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 499px) and (min-width: 320px) {
+    .input-fields {
+        width: 190px;
+    } 
+
+    .dropdown{
+        width: 202px;
+    }
+
+    .labels{
+        text-align: left;
+        width: 20%;
+        padding-left: 0;
+    }
+
+    .fields {
+        width: 65%;
+    }
+}
+
+@media (min-width: 500px) {
+    .input-fields {
+        width: 200px;
+
+    } 
+    .dropdown{
+        width: 212px;
+
+    }
+}
+
 @media (min-width: 1000px) {
     body {
-        max-width: 80vw;
+        width:60%;
     }
 }

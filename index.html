@@ -4,21 +4,16 @@
     <title>Good Vibes Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <!-- header -->
     <header>
-        <h1>Good Vibes Form</h1>
-        <nav>
-            <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">KITTIES!!!</a></li>
-            </ul>
-        </nav>
+        <h1 >Good Vibes Form</h1>
     </header>
     <!-- main form -->
     <main>
@@ -49,7 +44,7 @@
                 </div>
                 <div class="fields">
                     <select name="1-10" id="1-10" class="dropdown">
-                        <option disabled selected>select a number between 1 and 10</option>
+                        <option disabled selected>select a number from 1 to 10</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -107,10 +102,20 @@
                     <ul id="feelings">
                         <li class="checkbox">
                             <label for="excited">Excited</label><input type="checkbox" name="feelings-check" id="excited" value="excited" class="user-selection">
+                        </li>
+                        <li class="checkbox">
                             <label for="humbled">Humbled</label><input type="checkbox" name="feelings-check" id="humbled" value="humbled" class="user-selection">
+                        </li>
+                        <li class="checkbox">
                             <label for="elated">Elated</label><input type="checkbox" name="feelings-check" id="elated" value="elated" class="user-selection">
+                        </li>
+                        <li class="checkbox">
                             <label for="loved">Loved</label><input type="checkbox" name="feelings-check" id="loved" value="loved" class="user-selection">
+                        </li>
+                        <li class="checkbox">
                             <label for="enthusiatic">Enthusiaic</label><input type="checkbox" name="feelings-check" id="enthusiatic" value="enthusiatic" class="user-selection">
+                        </li>
+                        <li class="checkbox">
                             <label for="motivated">Motivated</label><input type="checkbox" name="feelings-check" id="motivated" value="motivated" class="user-selection">
                         </li>
                     </ul>
@@ -122,17 +127,21 @@
                     <label for="event-details">Please describe your positive experience.</label>
                 </div>
                 <div class="fields">
-                    <textarea name="event-details" id="event-details" cols="30" rows="10" placeholder="Enter your experience here..."></textarea>
+                    <textarea name="event-details" id="event-details" cols="15" rows="5" placeholder="Enter your experience here..."></textarea>
                 </div>
             </div>
-            
+            <div>
+                <input type="submit" class="submit">
+            </div>
             
         </form>
 
     </main>
     <!-- footer -->
     <footer>
-
+        <nav>
+            <a href="https://www.google.com/search?tbm=isch&q=cute+kitties">If you're feeling a bit down this might help</a>
+        </nav>
     </footer>
     
 </body>
